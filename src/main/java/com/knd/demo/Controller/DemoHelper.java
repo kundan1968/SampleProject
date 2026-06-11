@@ -1,9 +1,17 @@
 package com.knd.demo.Controller;
 
+import com.knd.demo.EmployeeModel;
+import org.springframework.stereotype.Component;
+
+@Component
 public class DemoHelper {
 
-    public void m1() {
+    public EmployeeModel getEmployeeDetails() {
+        EmployeeModel employee = new EmployeeModel();
+        employee.setEmpNo("1");
+        employee.setEmpName("Kundan");
+        employee.setDesignation("Engineer");
 
-
+        return employee;
     }
 }
